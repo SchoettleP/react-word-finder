@@ -1,14 +1,9 @@
 import React from 'react'
 import { NextPage } from 'next'
+import FinderPage from './finder'
 
 const Home: NextPage = () => {
-  const { APP_NAME } = process.env
-
-  return (
-    <div>
-      <span className="text-2xl">{APP_NAME}</span>
-    </div>
-  )
+  return <FinderPage />
 }
 
 export default Home
