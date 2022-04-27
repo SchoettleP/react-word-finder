@@ -8,9 +8,8 @@ interface Props {
 
 const LetterSizePicker = ({ size, setSize }: Props) => {
   return (
-    <div className="flex space-x-4 items-center">
-      <span>Wieviele Buchstaben?</span>
-      <NumberPicker min={2} max={20} size={size} setSize={setSize} />
+    <div className="flex space-x-4 items-center w-full">
+      <NumberPicker min={2} max={20} size={size} setSize={setSize} label="Wieviele Buchstaben?" />
     </div>
   )
 }
